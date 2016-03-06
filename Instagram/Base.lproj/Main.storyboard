@@ -28,26 +28,32 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVy-nD-GaV">
-                                <rect key="frame" x="137" y="300" width="47" height="30"/>
-                                <state key="normal" title="Sign In"/>
+                                <rect key="frame" x="126" y="300" width="69" height="30"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N1l-At-aYc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpQ-U3-aTl">
-                                <rect key="frame" x="133" y="353" width="55" height="30"/>
-                                <state key="normal" title="Sign Up"/>
+                                <rect key="frame" x="126" y="352" width="69" height="30"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dat-v0-7JZ"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.2470588235" green="0.44705882349999998" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="GN2-cV-J95"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="passwordField" destination="ZCl-iI-KSm" id="if8-ak-I9x"/>
+                        <outlet property="signInButton" destination="aVy-nD-GaV" id="Xee-VR-tQD"/>
+                        <outlet property="signUpButton" destination="wpQ-U3-aTl" id="jTb-4d-wPN"/>
                         <outlet property="usernameField" destination="QgF-LI-ETm" id="nXD-4e-d4R"/>
                         <segue destination="PI8-KR-XnW" kind="presentation" identifier="loginSegue" id="8cr-cB-XE0"/>
                     </connections>
@@ -85,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="1955" y="1135"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--My Tab Bar Controller-->
         <scene sceneID="CpS-Dm-62A">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarController" id="PI8-KR-XnW" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" id="PI8-KR-XnW" customClass="MyTabBarController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="Vz8-yq-BMj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
