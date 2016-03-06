@@ -1,6 +1,6 @@
 # Project 6 - *Parsegram*
 
-**Parsegram** is a photo sharing app using Parse as its backend.
+**Parsegram (bad name...I know)** is a photo sharing app using Parse as its backend.
 
 Time spent: **X** hours spent in total
 
@@ -11,7 +11,7 @@ The following **required** functionality is completed:
 - [X] User can sign up to create a new account using Parse authentication
 - [X] User can log in and log out of his or her account
 - [X] The current signed in user is persisted across app restarts
-- [ ] User can take a photo, add a caption, and post it to "Instagram"
+- [X] User can take a photo, add a caption, and post it to "Instagram"
 - [ ] User can view the last 20 posts submitted to "Instagram"
 
 The following **optional** features are implemented:
