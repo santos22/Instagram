@@ -177,7 +177,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DLJ-Ag-pZD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1457337270_picture-1" translatesAutoresizingMaskIntoConstraints="NO" id="DLJ-Ag-pZD">
                                 <rect key="frame" x="0.0" y="72" width="320" height="350"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a caption..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1KX-n1-oPw">
@@ -228,4 +228,7 @@
             <point key="canvasLocation" x="305" y="317"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1457337270_picture-1" width="512" height="512"/>
+    </resources>
 </document>

@@ -70,7 +70,7 @@ class HomeViewController: UIViewController,  UITableViewDataSource, UITableViewD
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = postsTableView.dequeueReusableCellWithIdentifier("PostCell", forIndexPath: indexPath) as! PostTableViewCell
         
-        //cell.post = posts![indexPath.row] // unwraps
+        let post = posts![indexPath.row] // unwraps
         cell.homePostImageView.tag = indexPath.row
         
         let mediaFile = postsAsPFObjects![indexPath.row]["media"] as! PFFile
@@ -78,7 +78,7 @@ class HomeViewController: UIViewController,  UITableViewDataSource, UITableViewD
             if imageData != nil {
                 let image = UIImage(data:imageData!)
                 cell.homePostImageView.image = image
-                //cell.postCaptionText.text = posts.caption
+                cell.postCaptionText.text = post.caption!
                 self.posts![indexPath.row].post = image
             }
         }

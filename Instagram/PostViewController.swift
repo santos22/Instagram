@@ -22,8 +22,11 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         vc.delegate = self
         vc.allowsEditing = true
         vc.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        
         self.presentViewController(vc, animated: true, completion: nil)
+        
+        let postTapAction = UITapGestureRecognizer(target: self, action: "postImage:")
+        postPreviewImageView.userInteractionEnabled = true
+        postPreviewImageView.addGestureRecognizer(postTapAction)
 
         // Do any additional setup after loading the view.
     }
@@ -31,6 +34,17 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func postImage(sender: UITapGestureRecognizer){
+        if sender.state != .Ended{
+            return
+        }
+        let vc = UIImagePickerController()
+        vc.delegate = self
+        vc.allowsEditing = true
+        vc.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        self.presentViewController(vc, animated: true, completion: nil)
     }
     
     func imagePickerController(picker: UIImagePickerController,
@@ -45,10 +59,11 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             // Dismiss UIImagePickerController to go back to your original view controller
             dismissViewControllerAnimated(true, completion: nil)
     }
-
+    
     @IBAction func saveImageToParse(sender: AnyObject) {
         Post.postUserImage(postPreviewImageView.image, withCaption: captionField.text ?? "") { (flag: Bool, error: NSError?) -> Void in}
         print("CHECK PARSE BRO")
+        postPreviewImageView.image = UIImage(named:"1457337270_picture-1")
     }
     /*
     // MARK: - Navigation
