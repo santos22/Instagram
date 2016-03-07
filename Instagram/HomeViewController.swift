@@ -22,6 +22,10 @@ class HomeViewController: UIViewController,  UITableViewDataSource, UITableViewD
         postsTableView.delegate = self
         
         constructQuery()
+        
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: "refreshControlAction:", forControlEvents: UIControlEvents.ValueChanged)
+        postsTableView.insertSubview(refreshControl, atIndex: 0)
 
         // Do any additional setup after loading the view.
     }
@@ -29,6 +33,10 @@ class HomeViewController: UIViewController,  UITableViewDataSource, UITableViewD
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func refreshControlAction(refreshControl: UIRefreshControl) {
+        constructQuery(refreshControl.endRefreshing())
     }
     
     func constructQuery(completion: Void) {
