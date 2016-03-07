@@ -64,6 +64,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         Post.postUserImage(postPreviewImageView.image, withCaption: captionField.text ?? "") { (flag: Bool, error: NSError?) -> Void in}
         print("CHECK PARSE BRO")
         postPreviewImageView.image = UIImage(named:"1457337270_picture-1")
+        captionField.text = ""
     }
     /*
     // MARK: - Navigation
