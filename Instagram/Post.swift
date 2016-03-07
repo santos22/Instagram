@@ -13,6 +13,29 @@ class Post: NSObject {
     /**
      * Other methods
      */
+    
+    var author: PFUser?
+    var createdAt: NSDate?
+    var post: UIImage?
+    var caption: String?
+    
+    init(object: PFObject) {
+        super.init()
+        
+        // set data
+        author = object["author"] as? PFUser
+        createdAt = object.createdAt!
+        caption = object["caption"] as? String
+    }
+     
+    class func PostsWithArray(array: [PFObject]) -> [Post] {
+        var posts = [Post]()
+        for object in array {
+            posts.append(Post(object: object))
+            // when callback complete continue
+        }
+        return posts
+    }
      
      /**
      Method to add a user post to Parse (uploading image file)
