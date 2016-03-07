@@ -2,7 +2,7 @@
 
 **Parsegram (bad name...I know)** is a photo sharing app using Parse as its backend.
 
-Time spent: **X** hours spent in total
+Time spent: **10** hours spent in total
 
 ## User Stories
 
@@ -12,7 +12,7 @@ The following **required** functionality is completed:
 - [X] User can log in and log out of his or her account
 - [X] The current signed in user is persisted across app restarts
 - [X] User can take a photo, add a caption, and post it to "Instagram"
-- [ ] User can view the last 20 posts submitted to "Instagram"
+- [X] User can view the last 20 posts submitted to "Instagram"
 
 The following **optional** features are implemented:
 
@@ -29,20 +29,22 @@ The following **additional** features are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. 
+1. I would further like to discuss with my peers about the Post class.
 2. 
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/ScDVNZE.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+1. Loading the post data into my table view...Parse is super awesome, but I still am not 100% confident with it.
 
 ## License
 
