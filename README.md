@@ -36,12 +36,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-NOTE: For some reason, the walkthrough is not being loaded. Here is the OG link -
-http://i.imgur.com/ScDVNZE.gifv
-http://i.imgur.com/ScDVNZE.gif
-
 <img src='http://i.imgur.com/Z3hvgXR.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-<img src='http://i.imgur.com/XgZLwkN.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
